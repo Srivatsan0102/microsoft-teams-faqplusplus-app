@@ -33,23 +33,6 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         Wrap = true
                     }
                 },
-                Actions = new List<AdaptiveAction>
-                {
-                    new AdaptiveSubmitAction
-                    {
-                        Title = Resource.AskAnExpertButtonText,
-                        Data = new ResponseCardPayload
-                        {
-                            MsTeams = new CardAction
-                            {
-                                Type = ActionTypes.MessageBack,
-                                DisplayText = Resource.AskAnExpertDisplayText,
-                                Text = FaqPlusPlusBot.AskAnExpert
-                            },
-                            UserQuestion = userQuestion
-                        },
-                    }
-                }
             };
 
             return new Attachment

@@ -46,39 +46,6 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         Wrap = true,
                     }
                 },
-                Actions = new List<AdaptiveAction>
-                {
-                    new AdaptiveSubmitAction
-                    {
-                        Title = Resource.AskAnExpertButtonText,
-                        Data = new ResponseCardPayload
-                        {
-                            MsTeams = new CardAction
-                            {
-                                Type = ActionTypes.MessageBack,
-                                DisplayText = Resource.AskAnExpertDisplayText,
-                                Text = FaqPlusPlusBot.AskAnExpert,
-                            },
-                            UserQuestion = userQuestion,
-                            KnowledgeBaseAnswer = answer,
-                        }
-                    },
-                    new AdaptiveSubmitAction
-                    {
-                        Title = Resource.ShareFeedbackButtonText,
-                        Data = new ResponseCardPayload
-                        {
-                            MsTeams = new CardAction
-                            {
-                                Type = ActionTypes.MessageBack,
-                                DisplayText = Resource.ShareFeedbackDisplayText,
-                                Text = FaqPlusPlusBot.ShareFeedback,
-                            },
-                            UserQuestion = userQuestion,
-                            KnowledgeBaseAnswer = answer,
-                        }
-                    }
-                }
             };
 
             return new Attachment
