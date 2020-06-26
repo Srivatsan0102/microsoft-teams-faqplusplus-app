@@ -250,7 +250,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I couldn&apos;t find anything apt for your request. Do you want me to ask an expert?.
+        ///   Looks up a localized string similar to I couldn&apos;t find anything apt for your request..
         /// </summary>
         public static string CustomMessage {
             get {
